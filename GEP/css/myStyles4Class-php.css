@@ -1,0 +1,45 @@
+/* - My Css for Class.php - */
+#bodyOfClass-php { margin-top: 50px; }
+.officeHours {
+	font-size: .8em;
+	height: 32px;
+	display: inline;
+}
+
+.officeHours li {cursor: pointer;}
+
+.officeHours>li>a {padding: 6px 12px;}
+
+#officeHoursID span {display: none;}
+
+#dayOfWeek>li {margin-bottom: 0;}
+
+.btn-group>.btn-group:first-child:not(:last-child)>.btn:last-child, .btn-group>.btn-group:first-child:not(:last-child)>.dropdown-toggle {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.btn-group>.btn-group:last-child:not(:first-child)>.btn:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+
+
+.frontOptions a {
+    background: #b0b7bf;
+    color: #fff;
+    text-align: center;
+    border-radius: 18px;
+    min-height: 36px;
+    min-width: 36px;
+    padding: 7px 10px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.frontOptions a:hover { background: #778492; }
+
+.progress {margin-bottom: 0; border-radius: 0;}
+
+@media (max-width: 768px) {#bodyOfClass-php {margin-top: 0;}}

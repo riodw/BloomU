@@ -17,11 +17,11 @@
    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
    <!-- Bootstrap Core CSS -->
-   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
    <!-- Custom CSS -->
-   <link rel="stylesheet" type="text/css" href="../css/custome.css">
-   <link rel="stylesheet" type="text/css" href="../css/topNavBar.css">
+   <link rel="stylesheet" type="text/css" href="css/custome.css">
+   <link rel="stylesheet" type="text/css" href="css/topNavBar.css">
 
    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,7 +30,6 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-
    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
@@ -38,9 +37,9 @@
    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.3.3/backbone-min.js"></script>
    <!-- APP JS FOR BACKBONE.js -->
-   <script type="text/javascript" src="../js/app.js"></script>
+   <!--<script type="text/javascript" src="js/app.js"></script>-->
 
-   <link rel="stylesheet" type="text/css" href="../css/typeaheadjs.css">
+   <link rel="stylesheet" type="text/css" href="css/typeaheadjs.css">
 </head>
 <body>
    <div id="app">
@@ -155,12 +154,12 @@
                
                <div class="well" style="padding:20px 35px;">
                   <header class="CreateMajor caption-full row" style="margin:0;">
-                     <a href="./GEP_Create.html" class="pull-right btn btn-warning"><i class="material-icons">&#xE145;</i> Create a New One</a>
+                     <a href="GEP_Create.html" class="pull-right btn btn-warning"><i class="material-icons">&#xE145;</i> Create a New One</a>
                      <h4>Don't See Your Major?</h4>
                   </header>
                   
                   <header class="VerifyMajor caption-full row" style="margin:0; display:none;">
-                     <a href="./GEP_Verify.php" class="pull-right btn btn-success"><i class="material-icons">&#xE876;</i> Continue</a>
+                     <a href="GEP_Verify.php" class="pull-right btn btn-success"><i class="material-icons">&#xE876;</i> Continue</a>
                      <h4>You have selected <strong>MAJOR</strong>.<br>Do you want to continue?</h4>
                   </header>
                   <!--<footer>-->
@@ -200,7 +199,7 @@
          <footer>
             <div class="row">
                <div class="col-lg-12">
-                  <p>Copyright &copy; Your Website 2017</p>
+                  <p>Copyright &copy; BloomU.info 2017</p>
                </div>
             </div>
          </footer>
@@ -210,7 +209,7 @@
 
    <!-- Typeahead -->
    <script src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
-   <script src="typeahead.js"></script>
+   <script src="js/typeahead.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,106 @@
+/* My Css */
+
+/*- Hover Link -*/
+	.titleImg2 {
+		z-index: 4;
+		text-align: center;
+	}
+
+	.titleImg2 a > img{
+		display: block;
+		margin: 0 auto;
+		max-width: 280px;
+		max-height: 100px;
+	}
+	
+	.hoverLink {
+		position: absolute;
+		left: 100px;
+		display: ;
+		height: 140px;
+		z-index: 3;
+		box-shadow: -5px 0px 5px #c3c3c3; }
+
+	.hoverLink img {max-width: 30px;}
+	
+	.titleImg2:hover + .hoverLink {display: block;}
+
+	.hoverLink:hover {display: block;}
+
+	.load:hover { background-color: rgba(255, 255, 255, .9);}
+
+	a.darken:hover button {opacity: 1;}
+
+	.load {
+		background-color: #fff;
+		-webkit-transition: background-color 300ms linear;
+		-moz-transition: background-color 300ms linear;
+		-o-transition: background-color 300ms linear;
+		-ms-transition: background-color 300ms linear;
+		transition: background-color 300ms linear;
+		position: absolute;
+		top: 31%;
+		left: 10%;
+		color: #666;
+		padding: .6em;
+		border-radius: 0.35em;
+		border: solid 3px #efefef;
+		z-index: 3;
+		opacity: 0;
+		-webkit-transition: all 0.15s linear;
+		-moz-transition: all 0.15s linear;
+		-ms-transition: all 0.15s linear;
+		-o-transition: all 0.15s linear;
+		transition: all 0.15s linear;
+  
+	}
+
+	a.fit.thumb img{
+		border-radius: .35em;
+	}
+
+	a.darken {
+		display: inline-block;
+		padding: 0;
+		border-radius: .35em;
+		position: relative;
+	}
+
+	a.darken img {
+		display: block;
+		-webkit-transition: all 0.15s linear;
+		   -moz-transition: all 0.15s linear;
+			-ms-transition: all 0.15s linear;
+			 -o-transition: all 0.15s linear;
+				transition: all 0.15s linear;
+		z-index: 2;
+	}
+
+	a.darken:hover img {
+		opacity: 0.7;
+	}
+/*-------------- Hover Link ----------------*/
+
+/* - Media -@- Media -@- Media -@- Media -@- Media -@- */
+@media (max-width: 768px) {
+	.pull-right {float: none!important;}
+	a.darken {
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
