@@ -1,0 +1,4 @@
+# Git Ignore file
+.c9
+.git
+php.ini
