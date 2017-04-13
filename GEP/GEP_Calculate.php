@@ -3,32 +3,38 @@
 <head>
   <!-- Light Red - #A30247 : Dark Red - #7A0035 -->
 
-
   <!-- SERVER ROOT -->
 	<?php $path = $_SERVER['DOCUMENT_ROOT'].'/'; ?>
 
   <!-- ALL CSS -->
-  <?php $output = include($path.'includes/head.php'); ?>
+  <?php
+  // $output = include($path.'includes/head.php');
+  ?>
 
   <!-- HIGHLIGHT CURRENT TAB -->
   <?php echo '<style type="text/css">'.'.'.$Class.' { background-color: #7A0035; color:#FFF; }'.'</style>'; ?>
-  
-   <link rel="stylesheet" href="../css/BloomU.css">
-   <link rel="stylesheet" href="../css/styles.css">
-   <link rel="stylesheet" href="../css/portal_styles.css">
-   <link rel="stylesheet" href="../css/myStyles4Class-php.css">
-   <link rel="stylesheet" href="../css/animate.css">
+  <!-- Font -->
+   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:300,400,500,600,700,800,300italic,400italic">
+   <!-- Icons -->
+   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   
+   <link rel="stylesheet" type="text/css" href="css/BloomU.css">
+   <link rel="stylesheet" type="text/css" href="css/styles.css">
+   <link rel="stylesheet" type="text/css" href="css/portal_styles.css">
+   <link rel="stylesheet" type="text/css" href="css/myStyles4Class-php.css">
+   <link rel="stylesheet" type="text/css" href="css/animate.css">
+   <link rel="stylesheet" type="text/css" href="css/custome.css">
+   <link rel="stylesheet" type="text/css" href="css/topNavBar.css">
 
-   <link rel="stylesheet" type="text/css" href="../css/custome.css">
-   <link rel="stylesheet" type="text/css" href="../css/topNavBar.css">
-
-   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
-   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
+   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<nav class="navbar navbar-static">
     <!-- LINK TO ALL OTHER CLASSES -->
-		<?php include_once($path.'includes/navbar.php'); ?>
+		<?php
+		//include_once($path.'includes/navbar.php');
+		?>
 	</nav>
 	
    <style>
@@ -59,8 +65,14 @@
       }
       /* 45 is really 360 - 45 */
       th.rotate > div {
-         transform: rotate(270deg);
-         width: 15px;
+         
+         -webkit-transform-origin: left;
+         -webkit-transform: translate(50%, 50%) rotate(270deg);
+         -ms-transform-origin: left;
+         -ms-transform: translate(50%, 50%) rotate(270deg);
+         transform-origin: left;
+         transform: translate(12px, 80px) rotate(270deg);
+         width: 25px;
       }
       th.rotate > div > span {
          /*border-bottom: 1px solid #ccc;*/

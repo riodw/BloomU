@@ -19,8 +19,8 @@
    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
 
    <!-- Custom CSS -->
-   <link rel="stylesheet" type="text/css" href="../css/custome.css">
-   <link rel="stylesheet" type="text/css" href="../css/topNavBar.css">
+   <link rel="stylesheet" type="text/css" href="css/custome.css">
+   <link rel="stylesheet" type="text/css" href="css/topNavBar.css">
 
    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,7 +37,7 @@
    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.3.3/backbone-min.js"></script>
    <!-- APP JS FOR BACKBONE.js -->
-   <script type="text/javascript" src="../js/app.js"></script>
+   <!--<script type="text/javascript" src="js/app.js"></script>-->
 </head>
 
 <body>
@@ -116,7 +116,7 @@
             <div class="col-md-3">
                <h2 class="page_title">GEP Calculator</h2>
                <div class="list-group">
-                  <a href="./index.html" class="list-group-item">1. Select Your Major</a>
+                  <a href="index.php" class="list-group-item">1. Select Your Major</a>
                   <a href="#" class="list-group-item active">2. Create Major</a>
                   <a href="#" class="list-group-item">3. Category</a>
                   <a href="./GEP_Calculate.php" class="list-group-item"><i class="material-icons">stars</i> Idc. Just show the GEP's!</a>

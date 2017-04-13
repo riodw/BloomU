@@ -118,7 +118,7 @@
                <h2 class="page_title">GEP Calculator</h2>
                <div class="list-group">
                   <a href="#" class="list-group-item active">1. Select Your Major</a>
-                  <a href="./GEP_Create.html" class="list-group-item">2. Create Major</a>
+                  <a href="./GEP_Create.php" class="list-group-item">2. Create Major</a>
                   <!--<a href="/GEP_Verity.php" class="list-group-item">2. Verify Major</a>-->
                   <a href="#" class="list-group-item">3. Category</a>
                   <a href="./GEP_Calculate.php" class="list-group-item"><i class="material-icons">stars</i> Idc. Just show the GEP's!</a>
