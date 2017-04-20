@@ -1,0 +1,50 @@
+#social a {
+   font-size: 1.8rem;
+   padding: .85rem 2.13rem;
+   border-radius: 0px;
+   border: 0;
+   color: #fff;
+   margin: 6px;
+   white-space: normal!important;
+   word-wrap: break-word;
+   
+   text-transform: uppercase;
+   
+   position: relative;
+   cursor: pointer;
+   overflow: hidden;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   z-index: 1;
+   
+   box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+   
+}
+
+#social .btn-fb {
+   background-color: #3B5998;
+}
+
+#social .btn-yt {
+   background-color: #CD201F;
+}
+
+#social .btn-ig {
+   background-color: #467fad;
+}
+
+#social .btn-li {
+   background-color: #0082CA;
+}
+
+#social .btn-imgur {
+   background-color: #1bb76e;
+}
+
+#social a:hover {
+   color: #111;
+   background-color: #fff !important;
+   box-shadow: 0 2px 15px 0 rgba(0,0,0,.36);
+}
