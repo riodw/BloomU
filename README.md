@@ -9,3 +9,8 @@ git fetch origin master:master
 
 
 https://github.com/riodw/BloomU.git
+
+git branch
+git checkout -b "Volan_Dev"
+git add .
+git status
