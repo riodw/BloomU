@@ -12,10 +12,10 @@ https://github.com/riodw/BloomU.git
 
 git branch
 git checkout -b "Volan_Dev"
-git add .
+git add . #
 git status
-git commit -m "Initial Commit"
-git push -u origin Volan_Dev
+git commit -m "Initial Commit" #
+git push -u origin Volan_Dev #git push
 git checkout master
 git branch -D Volan_Dev
 git checkout -b Volan_Dev
