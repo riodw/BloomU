@@ -31,6 +31,17 @@
 	<!-- Custom CSS -->
 	<link rel="stylesheet" type="text/css" href="client/css/custom.css">
 
+
+	<!--Google Analytics-->
+   <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+     ga('create', 'UA-98218033-1', 'auto');
+     ga('send', 'pageview');
+   </script>
+
 </head>
 
 <body>
@@ -180,12 +191,12 @@
 							<form method="post">
 								<div class="col-md-9 col-sm-9">
 									<div class="form-group">
-										<input type="email" class="form-control" placeholder="Email">
+										<input id="newEmail" type="email" class="form-control" placeholder="Email">
 									</div>
 								</div>
 								<div class="actions">
 									<div class="form-group">
-										<input type="submit" class="btn btn-primary" value="Subscribe" onclick="alert('Got it!');">
+										<input type="submit" class="btn btn-primary" value="Subscribe" onclick="allEamil()">
 									</div>
 								</div>
 							</form>
@@ -194,6 +205,46 @@
 				</div>
 			</div>
 		</div>
+		<!-- Google Firebase -->
+		<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyDK4q9zXbEwrVgXF2mEekhP7DH4MWLGu-I",
+		    authDomain: "emailsubscribe-aef57.firebaseapp.com",
+		    databaseURL: "https://emailsubscribe-aef57.firebaseio.com",
+		    projectId: "emailsubscribe-aef57",
+		    storageBucket: "emailsubscribe-aef57.appspot.com",
+		    messagingSenderId: "807881529861"
+		  };
+		  firebase.initializeApp(config);
+		  
+			//Get a reference ot the database service 
+			var database = firebase.database();
+			
+			var subscribe = database.ref('/subscribe');
+			
+			// Year of emails
+			var year = new Date().getFullYear();
+			
+			// Date user signed up
+			var fullDate = new Date().toLocaleString();
+			
+			// Run on "Subscribe" click
+			function allEamil() {
+				var email = document.getElementById('newEmail').value;
+				// ADD NEW EMAIL
+				subscribe.child(year).push({
+					'email': email,
+					'time': fullDate
+				});
+				
+				alert('Subscribed! Thank you ' + email);
+				
+				console.log(year, fullDate, email);
+			}
+			
+		</script>
 
 		<footer id="fh5co-footer" style="">
 			<div class="fh5co-overlay"></div>
