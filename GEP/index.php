@@ -165,7 +165,7 @@
                
                <div class="well" style="padding:20px 35px;">
                   <header class="CreateMajor caption-full row" style="margin:0;">
-                     <a href="GEP_Create.html" class="pull-right btn btn-warning"><i class="material-icons">&#xE145;</i> Create a New One</a>
+                     <a href="GEP_Create.php" class="pull-right btn btn-warning"><i class="material-icons">&#xE145;</i> Create a New One</a>
                      <h4>Don't See Your Major?</h4>
                   </header>
                   
